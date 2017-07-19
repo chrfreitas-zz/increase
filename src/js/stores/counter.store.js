@@ -24,22 +24,21 @@ class CounterStore extends EventEmitter {
 
 let counterStore = new CounterStore();
 
-AppDispatcher.register((payload){
+AppDispatcher.register(function(payload) {
 
     let action = payload.action;
 
     switch (action.actionType) {
-        case CounterStore.ADD:
+        case CounterConstants.ADD:
             console.log('Add');
             break;
 
-        case CounterStore.REMOVE:
+        case CounterConstants.REMOVE:
             console.log('Remove');
             break;
     }
 
     counterStore.emitChange();
-
 });
 
-exports default counterStore;
+export default counterStore;

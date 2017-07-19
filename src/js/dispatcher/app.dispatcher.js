@@ -6,7 +6,7 @@ const SOURCE = 'VIEW_ACTION';
 let AppDispatcher = new Flux.Dispatcher();
 
 AppDispatcher.viewAction = function(action = {}){
-    this.dispatcher({
+    this.dispatch({
         source: SOURCE,
         action,
     });
