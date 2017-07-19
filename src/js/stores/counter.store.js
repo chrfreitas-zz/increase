@@ -1,7 +1,7 @@
 'use strict';
 
-import AppDispatcher from '../dispatcher/AppDispatcher';
-import CounterConstants from '../constants/CounterConstants.js';
+import AppDispatcher from '../dispatcher/app.dispatcher';
+import CounterConstants from '../constants/counter.constants.js';
 import Events from 'events';
 
 const EventEmitter = Events.EventEmitter;

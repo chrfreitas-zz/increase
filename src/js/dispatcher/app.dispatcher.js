@@ -12,4 +12,4 @@ AppDispatcher.viewAction = function(action = {}){
     });
 }
 
-exports default AppDispatcher;
+export default AppDispatcher;

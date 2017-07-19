@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     ADD: 'ADD',
     REMOVE: 'REMOVE'
 }

@@ -1,14 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Counter from './components/counter.component';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Ola</h1>
-            </div>
-        );
-    }
-}
-
-ReactDOM.render(<App />, document.getElementById('main'));
+ReactDOM.render(<Counter />, document.getElementById('main'));
