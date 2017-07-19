@@ -1,15 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import React from 'react';
-import Spotify from './Spotify.js';
-import Playlist from './Playlist.js';
-import Controls from './Controls.js';
-
 class App extends React.Component {
-    constructor() {
-
-    }
     render() {
         return (
             <div>
@@ -18,8 +10,5 @@ class App extends React.Component {
         );
     }
 }
-
-export default App;
-
 
 ReactDOM.render(<App />, document.getElementById('main'));
