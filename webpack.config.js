@@ -8,7 +8,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 let config = {
     devtool: 'source-map',
-    entry: './src/js/index.js',
+    entry: './src/js/app.js',
     output: {
         path: path.resolve('dist'),
         filename: 'bundle.js',
