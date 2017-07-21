@@ -6,6 +6,19 @@ import CounterActions from '../actions/counter.actions';
 import CounterStore from '../stores/counter.store';
 
 class Counter extends React.Component {
+    constructor(props){
+        super(props);
+
+        this.state = {number: 0};
+    }
+
+    get(){
+        debugger;
+        this.setState({
+            number: CounterStore.get()
+        });
+    }
+
     add() {
         CounterActions.add();
     }
@@ -17,12 +30,13 @@ class Counter extends React.Component {
     componentDidMount() {
         CounterStore.addChangeListener(this.add);
         CounterStore.addChangeListener(this.remove);
+        CounterStore.addChangeListener(this.get.bind(this));
     }
 
     render(){
         return (
             <div>
-                <span></span>
+                <span>{this.state.number}</span>
                 <button onClick={this.add}>Add</button>
                 <button onClick={this.remove}>Remove</button>
             </div>
