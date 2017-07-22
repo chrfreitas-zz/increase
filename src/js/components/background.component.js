@@ -16,16 +16,20 @@ class Background extends React.Component {
     }
 
     componentDidMount(){
-        CounterStore.addChangeListener(this.onChange);
+        CounterStore.addChangeListener(this.onChange.bind(this));
     }
 
     onChange(){
-        
+        let next = this.state.state.next;
+
+        this.setState({
+            state: BackgroundConstant[next]
+        })
     }
 
     render() {
         return (
-            <div className={this.state.state}>
+            <div className={this.state.state.className}>
                 <Counter />
             </div>
         );
