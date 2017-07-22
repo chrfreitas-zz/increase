@@ -13,7 +13,6 @@ class Counter extends React.Component {
     }
 
     get(){
-        debugger;
         this.setState({
             number: CounterStore.get()
         });
