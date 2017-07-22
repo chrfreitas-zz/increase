@@ -1,5 +1,5 @@
 {
-  "name": "dj-spotify",
+  "name": "increase",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrfreitas/dj-spotify.git"
+    "url": "git+https://github.com/chrfreitas/increase.git"
   },
   "author": "Christian Freitas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chrfreitas/dj-spotify/issues"
+    "url": "https://github.com/chrfreitas/increase/issues"
   },
-  "homepage": "https://github.com/chrfreitas/dj-spotify#readme",
+  "homepage": "https://github.com/chrfreitas/increase#readme",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",
