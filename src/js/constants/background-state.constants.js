@@ -2,7 +2,7 @@ export default {
     STATE1: {
         name: 'STATE1',
         next: 'STATE2',
-        className:'background-state-1',
+        className:'background-state1',
     },
     STATE2: {
         name: 'STATE2',

@@ -27,6 +27,10 @@ class Background extends React.Component {
         })
     }
 
+    getClass(){
+        return `background  ${this.state.state.className}`;
+    }
+
     render() {
         return (
             <div className={this.state.state.className}>

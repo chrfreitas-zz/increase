@@ -34,10 +34,10 @@ class Counter extends React.Component {
 
     render(){
         return (
-            <div>
-                <span>{this.state.number}</span>
-                <button onClick={this.add}>Add</button>
-                <button onClick={this.remove}>Remove</button>
+            <div className="counter">
+                <span className="counter_number">{this.state.number}</span>
+                <button className="counter__btn" onClick={this.add}>Add</button>
+                <button className="counter__btn" onClick={this.remove}>Remove</button>
             </div>
         );
     }
