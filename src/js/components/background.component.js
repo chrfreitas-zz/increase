@@ -33,7 +33,7 @@ class Background extends React.Component {
 
     render() {
         return (
-            <div className={this.state.state.className}>
+            <div className={this.getClass()}>
                 <Counter />
             </div>
         );

@@ -7,11 +7,11 @@ export default {
     STATE2: {
         name: 'STATE2',
         next: 'STATE3',
-        className:'background-state-2',
+        className:'background-state2',
     },
     STATE3: {
         name: 'STATE3',
         next: 'STATE1',
-        className:'background-state-3'
+        className:'background-state3'
     }
 }

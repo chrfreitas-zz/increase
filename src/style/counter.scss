@@ -1,0 +1,18 @@
+.counter {
+
+    &__display {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    &__btn {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 20px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}

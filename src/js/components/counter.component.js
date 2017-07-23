@@ -35,9 +35,9 @@ class Counter extends React.Component {
     render(){
         return (
             <div className="counter">
-                <span className="counter_number">{this.state.number}</span>
-                <button className="counter__btn" onClick={this.add}>Add</button>
-                <button className="counter__btn" onClick={this.remove}>Remove</button>
+                <div className="counter__display">{this.state.number}</div>
+                <button className="counter__btn" onClick={this.add}>+</button>
+                <button className="counter__btn" onClick={this.remove}>-</button>
             </div>
         );
     }
