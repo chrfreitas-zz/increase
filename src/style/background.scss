@@ -3,16 +3,42 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    transition: opacity .5s;
+    z-index: 5;
 
-    &-state1 {
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        transition: opacity .5s;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+    }
+
+    &:after {
         background: linear-gradient(#216342, #57C757);
     }
 
-    &-state2 {
+    &:before{
         background: linear-gradient(#261B50, #7940BF);
     }
 
-    &-state3{
-        background: linear-gradient(#63212E, #8E352F);
+    &-state1 {
+        opacity: 1;
+        background: linear-gradient(#918B30, #BBBF40);
+    }
+
+    &-state2 {
+        &:after {
+            opacity: 1;
+        }
+    }
+
+    &-state3 {
+        &:after {
+            opacity: 1;
+        }
     }
 }
