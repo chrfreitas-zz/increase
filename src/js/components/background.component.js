@@ -34,6 +34,9 @@ class Background extends React.Component {
     render() {
         return (
             <div className={this.getClass()}>
+                <div className="background__layer1"></div>
+                <div className="background__layer2"></div>
+                <div className="background__layer3"></div>
                 <Counter />
             </div>
         );

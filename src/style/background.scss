@@ -3,41 +3,45 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    transition: opacity .5s;
-    z-index: 5;
 
-    &:after,
-    &:before {
-        content: '';
+    &__layer1,
+    &__layer2,
+    &__layer3 {
         position: absolute;
-        transition: opacity .5s;
         width: 100%;
         height: 100%;
         top: 0;
         opacity: 0;
+        transition: opacity .5s;
+        z-index: 5;
     }
 
-    &:after {
-        background: linear-gradient(#216342, #57C757);
+    &__layer1 {
+        background: linear-gradient(#25656F, #305791);
     }
 
-    &:before{
-        background: linear-gradient(#261B50, #7940BF);
+    &__layer2 {
+        background: linear-gradient(#297326, #4EB83D);
+    }
+
+    &__layer3 {
+        background: linear-gradient(#2A194D, #5B2F8E);
     }
 
     &-state1 {
-        opacity: 1;
-        background: linear-gradient(#918B30, #BBBF40);
+        .background__layer1 {
+            opacity: 1;
+        }
     }
 
     &-state2 {
-        &:after {
+        .background__layer2 {
             opacity: 1;
         }
     }
 
     &-state3 {
-        &:after {
+        .background__layer3 {
             opacity: 1;
         }
     }
