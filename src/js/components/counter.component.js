@@ -26,9 +26,7 @@ class Counter extends React.Component {
         CounterActions.remove();
     }
 
-    componentDidMount() {
-        CounterStore.addChangeListener(this.add);
-        CounterStore.addChangeListener(this.remove);
+    componentDidMount() {        
         CounterStore.addChangeListener(this.get.bind(this));
     }
 
