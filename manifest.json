@@ -4,8 +4,8 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
-  "Scope": "/",
-  "start_url": "/",
+  "scope": "/increase",
+  "start_url": "/increase",
   "icons": [
     {
       "src": "dist/img/icons/icon-72x72.png",
