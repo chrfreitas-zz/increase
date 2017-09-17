@@ -1,8 +1,8 @@
 {
     "name": "Increase",
     "short_name": "Increase",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "fullscreen",
     "scope": "/increase",
     "start_url": "/increase",
