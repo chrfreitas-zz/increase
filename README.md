@@ -18,3 +18,9 @@ Usage
 Using a small server to make simple run application. You can run the command below.
 
 > npm start
+
+
+License
+------------
+
+MIT License © Christian Freitas
